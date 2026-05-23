@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Direktori Pendidik | MAN Purbalingga</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white-base">
+
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo.jpg" alt="Logo" class="brand-logo me-2 rounded-circle" style="width: 40px; height: 40px; object-fit: cover;" />
+        <div><span class="brand-main">MAN</span> <span class="brand-sub">Purbalingga</span></div>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bx bx-menu fs-2 text-success-man"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="progD" data-bs-toggle="dropdown">Program</a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="program.html#unggul">Jalur Unggul</a></li>
+              <li><a class="dropdown-item" href="program.html#reguler">Reguler</a></li>
+              <li><a class="dropdown-item" href="program.html#mandiri">Mandiri</a></li>
+              <li><a class="dropdown-item" href="program.html#tahfidz">Tahfidz</a></li>
+              <li><a class="dropdown-item" href="program.html#atlet">Atlet (Olahraga)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="guru.html">Guru</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#news-section">News</a></li>
+          <li class="nav-item"><a class="nav-link" href=index.html#kontak>Kontak</a></li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5 mt-5">
+    <div class="text-center my-4">
+      <span class="text-success-man text-uppercase tracking-wider small fw-bold">Profil Tenaga Pendidik</span>
+      <h2 class="title-academic text-dark-man">Dewan Guru Agung</h2>
+      <p class="text-muted small">Klik pada kartu dewan guru untuk menampilkan profil detail biodata resmi.</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+      
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru1" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="kepsek.jpg" class="card-img-top" alt="Travis Scott" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">H. Jahroni, M.Pd.I</h6>
+            <small class="text-success-man d-block small">Kepala Sekolah</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru2" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="fisika.jpg" class="card-img-top" alt="Aubrey Drake" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">Ibu Arwan Isliyanti, S.Pd., M.PFis.</h6>
+            <small class="text-success-man d-block small">Guru Fisika</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru3" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="eng.jpg" class="card-img-top" alt="Frank Ocean" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">Ibu Suliyah, S.Pd.</h6>
+            <small class="text-success-man d-block small">Guru B. Inggris</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru4" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="math.jpg" class="card-img-top" alt="Kendrick Lamar" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">Bapak Ari Priyanto, S.Pd.</h6>
+            <small class="text-success-man d-block small">Guru Matematika</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru5" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="biologi.jpg" class="card-img-top" alt="J. Cole" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">Bapak Hartawan Bayu P., S.Si.</h6>
+            <small class="text-success-man d-block small">Guru Biologi</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru6" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="kimia.jpg" class="card-img-top" alt="Kanye West" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;"> Bapak Mukholik Adi Susatyo, S.Pd., M.Sc.</h6>
+            <small class="text-success-man d-block small">Guru Kimia</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru7" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="sejarah.jpg" class="card-img-top" alt="Eminem" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">Ibu Risda Amanda, S.Pd., Gr.</h6>
+            <small class="text-success-man d-block small">Guru Sejarah</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru8" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="senbud.jpg" class="card-img-top" alt="Asap Rocky" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">Bapak Canggih Finalti, S.Pd.</h6>
+            <small class="text-success-man d-block small">Guru Seni Budaya</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru9" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="arab.jpg" class="card-img-top" alt="Tyler" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">Bapak Aman Nurkhayanto, S.Pd.I.</h6>
+            <small class="text-success-man d-block small">Guru B. Arab</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card teacher-interactive-card border-0 text-center h-100 shadow-xs" data-bs-toggle="modal" data-bs-target="#modalGuru10" style="cursor: pointer;">
+          <div class="img-container position-relative overflow-hidden bg-light rounded-top">
+            <img src="pjok.jpg" class="card-img-top" alt="Post Malone" style="height: 220px; object-fit: cover;" />
+          </div>
+          <div class="card-body p-3 bg-white rounded-bottom">
+            <h6 class="fw-bold text-dark-man mb-1 text-truncate" style="font-size: 0.95rem;">Bapak Sugianto, S.Pd.</h6>
+            <small class="text-success-man d-block small">Guru Penjasorkes</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-shadow="none" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="kepsek.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1"></h4>H. Jahroni, M.Pd.I</h4>
+          <span class="badge bg-light text-success-man mb-4">Kepala Madrasah</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Purbalingga Kota, Jawa Tengah</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 30 April 1991</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2015</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="fisika.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1">Ibu Arwan Isliyanti, S.Pd., M.PFis.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru Fisika Terpadu</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Kalimanah, Kabupaten Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 24 Oktober 1986</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2012</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="eng.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1">Ibu Suliyah, S.Pd.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru Bahasa Inggris</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Bobotsari, Kabupaten Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 28 Oktober 1987</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2017</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="math.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1">Bapak Ari Priyanto, S.Pd.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru Matematika</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Kutasari, Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 17 Juni 1987</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2016</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="biologi.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1">JBapak Hartawan Bayu P., S.Si.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru Biologi</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Mrebet, Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 28 Januari 1985</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2014</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="kimia.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1"> Bapak Mukholik Adi Susatyo, S.Pd., M.Sc.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru Kimia</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Padamara, Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 8 Juni 1977</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2010</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru7" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="sejarah.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1">Ibu Risda Amanda, S.Pd., Gr.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru Sejarah</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Bukateja, Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 17 Oktober 1972</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2008</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru8" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="senbud.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1">Bapak Canggih Finalti, S.Pd.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru Seni Budaya</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Karanganyar, Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 3 Oktober 1988</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2018</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru9" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="arab.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1">Bapak Aman Nurkhayanto, S.Pd.I.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru B. Arab</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Kejobong, Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 6 Maret 1991</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2020</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGuru10" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-success-man text-white">
+          <h5 class="modal-title title-academic">Detail Profil Pendidik</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="pjok.jpg" class="rounded-circle mb-3 border" style="width:120px; height:120px; object-fit:cover;" />
+          <h4 class="fw-bold text-dark-man mb-1">Bapak Sugianto, S.Pd.</h4>
+          <span class="badge bg-light text-success-man mb-4">Guru Penjasorkes</span>
+          <div class="text-start border-top pt-3">
+            <table class="table table-sm table-borderless small mb-0">
+              <tr><td class="text-muted" style="width: 30%;">Alamat</td><td class="text-dark-man">: Pengadegan, Purbalingga</td></tr>
+              <tr><td class="text-muted">Tgl Lahir</td><td class="text-dark-man">: 4 Juli 1995</td></tr>
+              <tr><td class="text-muted">Mengajar Sejak</td><td class="text-dark-man">: Tahun 2022</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <img src="logo.jpg" alt="Logo" class="rounded-circle me-2" style="width: 45px; height: 45px; object-fit: cover;" />
+            <div>
+              <h5 class="mb-0 fw-bold tracking-wider">MAN Purbalingga</h5>
+              <small class="text-white-50">Unggul & Berakhlak Mulia</small>
+            </div>
+          </div>
+          <p class="small text-white-50 lh-lg">Madrasah Aliyah Negeri Purbalingga berkomitmen melahirkan generasi Islami yang siap menghadapi tantangan global melalui integrasi ilmu agama dan sains modern.</p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="fw-bold text-uppercase tracking-wider mb-3 text-warning">Tautan Pintas</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none text-white-hover">Beranda</a></li>
+            <li class="mb-2"><a href="guru.html" class="text-white-50 text-decoration-none text-white-hover">Data Guru</a></li>
+            <li class="mb-2"><a href="index.html#news-section" class="text-white-50 text-decoration-none text-white-hover">Berita Terkini</a></li>
+            <li class="mb-2"><a href="index.html#kontak" class="text-white-50 text-decoration-none text-white-hover">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h6 class="fw-bold text-uppercase tracking-wider mb-3 text-warning">Program Unggulan</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="program.html#unggul" class="text-white-50 text-decoration-none text-white-hover">Jalur Unggulan</a></li>
+            <li class="mb-2"><a href="program.html#tahfidz" class="text-white-50 text-decoration-none text-white-hover">Program Tahfidz</a></li>
+            <li class="mb-2"><a href="program.html#reguler" class="text-white-50 text-decoration-none text-white-hover">Kelas Reguler</a></li>
+            <li class="mb-2"><a href="program.html#atlet" class="text-white-50 text-decoration-none text-white-hover">Kelas Atlet</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold text-uppercase tracking-wider mb-3 text-warning">Jam Pelayanan</h6>
+          <ul class="list-unstyled small text-white-50">
+            <li class="mb-2 d-flex justify-content-between">
+              <span>Senin - Kamis:</span>
+              <span>07:00 - 15:30 WIB</span>
+            </li>
+            <li class="mb-2 d-flex justify-content-between">
+              <span>Jumat:</span>
+              <span>07:00 - 14:00 WIB</span>
+            </li>
+            <li class="border-top border-secondary pt-2 mt-2 text-center text-md-start">
+              <span class="badge bg-success px-3 py-2 text-uppercase"><i class="bx bxs-check-circle me-1"></i> PPDB 2026/2027 Buka</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row mt-4 pt-3 border-top border-secondary text-center small text-white-50">
+        <div class="col-md-6 text-md-start mb-2 mb-md-0">
+          © 2026 MAN Purbalingga. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div class="col-md-6 text-md-end">
+          <span class="me-2">Dikembangkan oleh Tim IT Madrasah</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
